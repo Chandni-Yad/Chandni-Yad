@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <title>Document</title>
+</head>
+<body>
+  <input placeholder="Name" class="js-text" onkeydown="console.log(event.key)
+  if( event.key === 'Enter'){
+    totalText ();
+  }"
+ > 
+  <button onclick="
+  
+  ">Submit</button> 
+  <p class="js-total-cost"></p>
+  <script>
+function totalText (){
+    const inputElement = document.querySelector('.js-text')
+ let text = inputElement.value;
+ document.querySelector('.js-total-cost').innerHTML = ` your name is:${text}`;
+ 
+}
+
+
+  </script>
+</body>
+</html>
